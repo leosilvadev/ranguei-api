@@ -1,0 +1,6 @@
+{
+	"MONGODB": {
+		"test": "mongodb://localhost/ranguei_test",
+		"development": "mongodb://localhost/ranguei"
+	}
+}
