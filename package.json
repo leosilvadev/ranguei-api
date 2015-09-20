@@ -14,5 +14,10 @@
     "hiredis": "^0.4.1",
     "mongoose": "^4.0.6",
     "redis": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.2",
+    "should": "^7.1.0",
+    "supertest": "^1.1.0"
   }
 }
