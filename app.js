@@ -7,11 +7,13 @@ var express = require('express')
 	, redis = require('redis')
 	, redisClient = redis.createClient();
 
+Promise.promisifyAll(mongoose);
 Promise.promisifyAll(redisClient);
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 app.redisClient = redisClient;
+app.mongoose = mongoose;
 
 load('models')
 	.then('middlewares')
