@@ -1,4 +1,4 @@
-var app = require('../../app'),
+var app = require('../../../app'),
 	 request = require('supertest')(app);
 
 	describe('User Access Controller', function(){
