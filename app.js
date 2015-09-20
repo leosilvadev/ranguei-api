@@ -3,9 +3,11 @@ var express = require('express')
 	, bodyParser = require('body-parser')
 	, app = express()
 	, mongoose = require('mongoose')
+	, Promise = require('bluebird')
 	, redis = require('redis')
 	, redisClient = redis.createClient();
 
+Promise.promisifyAll(redisClient);
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
