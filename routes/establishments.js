@@ -1,7 +1,7 @@
 module.exports = function(app) {
 
-	var establishmentsCtrl = app.controllers.establishments;
+	var establishments = app.controllers.establishments;
 
-	app.get('/', establishmentsCtrl.index);
+	app.get('/establishments', establishments.index);
 
 };

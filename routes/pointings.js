@@ -1,7 +1,7 @@
 module.exports = function(app) {
 
-	var pointingCtrl = app.controllers.pointings;
+	var pointings = app.controllers.pointings;
 
-	app.post('/:establishmentId/pointings', pointingCtrl.point);
+	app.post('/establishments/:establishmentId/pointings', pointings.point);
 
 };
