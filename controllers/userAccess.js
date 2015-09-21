@@ -6,6 +6,7 @@ module.exports = function(app){
 		
 		authenticate: function(req, res){
 			const authentication = req.body;
+			console.log(authentication);
 			const authenticationValue = JSON.stringify(authentication);
 
 			redisClient.setAsync(authentication.token, authenticationValue)

@@ -4,7 +4,7 @@ var app = require('../../../app'),
 	describe('User Access Controller', function(){
 		it('should authenticate a user with token and objectId', function(done){
 			request
-				.post('/access/authenticate')
+				.post('/access')
 				.expect('Content-Type', /json/)
 				.send({token:'123456', objectId:'1'})
 				.end(function(err, res){
