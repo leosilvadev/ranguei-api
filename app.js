@@ -1,4 +1,5 @@
 var express = require('express')
+	, cors = require('cors')
 	, load = require('express-load')
 	, bodyParser = require('body-parser')
 	, app = express()
@@ -10,6 +11,7 @@ var express = require('express')
 Promise.promisifyAll(mongoose);
 Promise.promisifyAll(redisClient);
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 app.redisClient = redisClient;
@@ -23,7 +25,7 @@ load('models')
 
 app.disable('x-powered-by');
 
-app.listen(3000, function(){
+app.listen(9000, function(){
 	console.log('Ranguei online');
 });
 

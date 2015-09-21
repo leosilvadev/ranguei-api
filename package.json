@@ -9,6 +9,7 @@
   "dependencies": {
     "body-parser": "~1.10.1",
     "cookie-parser": "~1.3.3",
+    "cors": "^2.7.1",
     "express": "~4.10.6",
     "express-load": "^1.1.14",
     "hiredis": "^0.4.1",
@@ -16,6 +17,7 @@
     "redis": "^1.0.0"
   },
   "devDependencies": {
+    "istanbul": "^0.3.20",
     "mocha": "^2.3.2",
     "should": "^7.1.0",
     "supertest": "^1.1.0"
