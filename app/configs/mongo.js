@@ -1,5 +1,7 @@
+'use strict';
+
 var mongoose = require('mongoose'),
-	 config = require('../config.json'),
+	 config = require('../../config.json'),
 	 env = process.env.NODE_ENV || "development",
 	 url = config.MONGODB[env],
 	 Promise = require('bluebird'),
