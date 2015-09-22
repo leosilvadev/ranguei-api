@@ -1,11 +1,9 @@
 'use strict';
 
-module.exports = function(){
+var router = require('express').Router(),
+	controller = require('./controller');
 
-	var userAcess = require('./controller');
+router.post('/', controller.authenticate);
+router.get('/:token', controller.find);
 
-	app.post('/access', userAcess.authenticate);
-	
-	app.get('/access/:token', userAcess.find);
-
-};
+module.exports = router;

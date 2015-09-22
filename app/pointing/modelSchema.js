@@ -1,6 +1,6 @@
 'use strict';
 
-var db = require('../configs/mongo')(),
+var db = require('../config/mongo')(),
 	 Schema = require('mongoose').Schema;
 
 var PointingSchema = Schema({

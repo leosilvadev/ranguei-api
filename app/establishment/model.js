@@ -1,6 +1,6 @@
 'use strict';
 
-const db = require('../configs/mongo')(),
+const db = require('../config/mongo')(),
 		Schema = require('mongoose').Schema,
 		PointingSchema = require('../pointing/modelSchema').pointing;
 

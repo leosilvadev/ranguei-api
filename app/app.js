@@ -11,6 +11,8 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 app.use('/establishments', require('./establishment/routes'));
+app.use('/establishments', require('./pointing/routes'));
+app.use('/access', require('./user_access/routes'));
 
 app.disable('x-powered-by');
 
