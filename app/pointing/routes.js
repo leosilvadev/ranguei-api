@@ -1,9 +1,8 @@
 'use strict';
 
-module.exports = function() {
+var router = require('express').Router(),
+	 controller = require('./controller');
 
-	var pointings = require('./controller');
+router.post('/:establishmentId/pointings', controller.point);
 
-	app.post('/establishments/:establishmentId/pointings', pointings.point);
-
-};
+module.exports = router;
